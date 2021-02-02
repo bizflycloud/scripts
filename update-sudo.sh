@@ -41,7 +41,7 @@ update_debian() {
     echo "----Sudo version truoc khi update----"
     dpkg -l | grep sudo
     echo "---> Updating..."
-    wget -O "sudo_1.9.5.deb" $url
+    wget -q -O "sudo_1.9.5.deb" $url
     dpkg -i sudo_1.9.5.deb
     echo "======================================"
     echo "----Sudo version sau khi update----"
@@ -54,7 +54,7 @@ update_centos() {
     rpm -qa | grep sudo
     echo "---> Updating..."
     yum install -y wget
-    wget -O sudo_1.9.5.rpm $url
+    wget -q -O sudo_1.9.5.rpm $url
     rpm -Uvh sudo_1.9.5.rpm
     echo "======================================"
     echo "----Sudo version sau khi update----"
