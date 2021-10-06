@@ -145,6 +145,4 @@ function main {
 }
 
 main
-# $a= authen 'duynn@bizflycloud.vn' 'Vcc123**'
-# CMD /c PAUSE
-# api_call ~\Desktop\checknetwork_20210629_091329
+
